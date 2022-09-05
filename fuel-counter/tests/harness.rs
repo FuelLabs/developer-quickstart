@@ -36,7 +36,8 @@ async fn get_contract_instance() -> (MyContract, ContractId) {
 async fn can_get_contract_id() {
     let (instance, _id) = get_contract_instance().await;
     // Now you have an instance of your contract you can use to test each function
-    let result = instance.increment().call().await.unwrap();
-    assert!(result.value > 0) 
+    instance.increment().call().await.unwrap();
+    let result = instance.count().call().await.unwrap();
+    assert!(result.value > 0); 
     // Now you have an instance of your contract you can use to test each function
 }
