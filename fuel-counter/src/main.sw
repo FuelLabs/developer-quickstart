@@ -9,16 +9,16 @@ abi Counter {
     fn increment();
 
     #[storage(read)]
-    fn count() -> u64;
+    fn get_count() -> u64;
 }
 
 impl Counter for Contract {
     #[storage(read)]
-    fn count() -> u64 {
-      return storage.counter;
+    fn get_count() -> u64 {
+        return storage.counter;
     }
     #[storage(read, write)]
-    fn increment(){
+    fn increment() {
         storage.counter = storage.counter + 1;
     }
 }
