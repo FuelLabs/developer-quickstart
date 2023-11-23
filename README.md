@@ -9,4 +9,4 @@ This guide will walk developers though creating a dapp on Fuel, from beginning t
 
 ## Need Help?
 
-Join our [discord](https://discord.gg/bMS8JYhpEs)
+Join our [discord](https://discord.com/invite/fuelnetwork)
